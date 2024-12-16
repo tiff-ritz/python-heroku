@@ -8,15 +8,15 @@ from .models import Greeting
 # Create your views here.
 
 
-# def index(request):
-#    return render(request, "index.html")
+def index(request):
+   return render(request, "index.html")
 # def index(request):
 #    r = requests.get('https://httpbin.org/status/418', timeout=10)
 #    return HttpResponse('<pre>' + r.text + '</pre>')
 
-def index(request):
-    times = int(os.environ.get('TIMES', 3))
-    return HttpResponse('Hello! ' * times)
+# def index(request):
+#    times = int(os.environ.get('TIMES', 3))
+#    return HttpResponse('Hello! ' * times)
 
 def db(request):
     # If you encounter errors visiting the `/db/` page on the example app, check that:
