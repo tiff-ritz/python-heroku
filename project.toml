@@ -1,0 +1,11 @@
+[_]
+schema-version = "0.2"
+
+[com.heroku.buildpacks.deb-packages]
+install = [
+  "git",
+  "portaudio19-dev",
+  "python3-all-dev",
+  {name = "pgbouncer", force = true },
+  {name = "chromium-browser", force = true},
+]
